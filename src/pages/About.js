@@ -10,7 +10,7 @@ const markdown = raw('../data/about.md');
 
 const count = markdown.split(/\s+/)
   .map((s) => s.replace(/\W/g, ''))
-  .filter((s) => s.length).length;
+  .filter((s) => s.length).length; // TODO: would be good if this discarded comments properly
 
 // Make all hrefs react router links
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
@@ -18,7 +18,7 @@ const LinkRenderer = ({ ...children }) => <Link {...children} />;
 const About = () => (
   <Main
     title="About"
-    description="Learn about Michael D'Angelo"
+    description="Learn about Vadim Isakov"
   >
     <article className="post markdown" id="about">
       <header>

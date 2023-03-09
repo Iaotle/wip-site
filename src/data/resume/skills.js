@@ -1,4 +1,4 @@
-// TODO: Add Athletic Skills, Office Skills,
+// TODO: Fix all of these skills,
 // Data Engineering, Data Science, ML Engineering, ... ?
 
 const skills = [

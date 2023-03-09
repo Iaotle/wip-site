@@ -9,7 +9,7 @@ const validateText = (text) => {
   return re.test(text) || text.length === 0;
 };
 
-const messages = [
+const messages = [ // todo remove
   'hi',
   'hello',
   'hola',
@@ -82,9 +82,9 @@ const EmailLink = ({ loopMessage }) => {
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
+      <a href={validateText(message) ? `mailto:${message}@iaotle.dev` : ''}>
         <span>{message}</span>
-        <span>@mldangelo.com</span>
+        <span>@iaotle.dev</span>
       </a>
     </div>
   );
